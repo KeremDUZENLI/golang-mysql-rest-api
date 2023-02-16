@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  mysql:
+    container_name: MYSQL
+    image: 'mysql:8.0'
+    environment:
+      - MSSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_ROOT_PASSWORD=MYSQL_REST_API_TEST
+      - MYSQL_DATABASE=MYSQL_REST_API_TEST
+    ports:
+      - '3307:3306'
